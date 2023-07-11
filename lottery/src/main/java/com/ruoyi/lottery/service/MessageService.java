@@ -1,4 +1,5 @@
 package com.ruoyi.lottery.service;
 
-public interface ImService {
+public interface MessageService {
+
 }

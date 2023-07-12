@@ -11,7 +11,7 @@ public class SocketConstants {
     // 消息订阅地址常量
     public static final class BROKER {
         // 点对点消息代理地址
-        public static final String BROKER_QUEUE = "/queue";
+        public static final String BROKER_USER = "/user";
         // 广播消息代理地址
         public static final String BROKER_TOPIC = "/topic";
     }

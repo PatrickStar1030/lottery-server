@@ -1,5 +1,7 @@
 package com.ruoyi.lottery.service;
 
-public interface MessageService {
+import com.ruoyi.lottery.entity.message.MessageBody;
 
+public interface MessageService {
+    boolean checkUserMessage(MessageBody messageBody);
 }

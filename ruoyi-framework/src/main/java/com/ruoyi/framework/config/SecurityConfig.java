@@ -114,6 +114,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .antMatchers("/login", "/register", "/captchaImage").permitAll()
                 //允许websocket端点访问
                 .antMatchers("/websocket/**").permitAll()
+                //websocket请求访问鉴权认证
+//                .antMatchers("/websocket/**").authenticated()
                 // 静态资源，可匿名访问
                 .antMatchers(HttpMethod.GET, "/", "/*.html", "/**/*.html", "/**/*.css", "/**/*.js", "/profile/**").permitAll()
                 .antMatchers("/swagger-ui.html", "/swagger-resources/**", "/webjars/**", "/*/api-docs", "/druid/**").permitAll()
